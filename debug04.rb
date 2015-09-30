@@ -1,7 +1,15 @@
+#def char_count(list)
+ # letters = {}
+ # list.each do |word|
+ #   word.split('').each { |letter| letters{letter} += 1 }
+ # end
+ # letters
+#end
+
 def char_count(list)
-  letters = {}
+  letters = Hash.new(0)
   list.each do |word|
-    word.split('').each { |letter| letters[letter] += 1 }
+    word.split('').each { |letter| letters[letter] += 1}
   end
   letters
 end
@@ -13,3 +21,10 @@ puts char_count(['apples', 'oranges', 'hipsters', 'are', 'same'])
 
 
 # 2. What are the improvements you can do to above code?
+
+#list.each do |ele|
+ #   sum += ele
+  #end
+  #sum
+
+  #list.select {|ele| sum += ele}
